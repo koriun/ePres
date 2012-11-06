@@ -1,0 +1,24 @@
+/* 
+    Document   : main.css
+    Created on : Nov 5, 2012, 9:52:51 PM
+    Author     : koriun
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+body {
+    margin-left:2cm;
+    background-color: #FEFDCF;
+}
+
+.lefttd {
+    text-align: right;
+}
+
+.bgcolor {
+    background-color: #FEFDCF;
+}

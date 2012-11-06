@@ -1,0 +1,29 @@
+<?php echo $this->doctype() ?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>ePrescription Demo Page</title>
+        <?php echo $this->headLink()
+                ->appendStylesheet($this->baseUrl('/css/main.css')) ?>
+    </head>
+    <body>
+        <div style="float: left;"><span 
+                style="font-size: larger; font-weight: bold">ePrescrition</span></div>
+        <div style="float:right;">
+        <a href="<?php echo $this->url(
+                array('controller'=>'prescription',
+                    'action' => 'index'), 
+                'default', true ) ?>">Home</a> | 
+        <a href="<?php echo $this->url(
+                array('controller'=>'prescription',
+                    'action' => 'list'), 
+                'default', true ) ?>">List</a> | 
+        <a href="<?php echo $this->url(
+                array('controller'=>'prescription',
+                    'action' => 'add'), 
+                'default', true ) ?>">Add</a>
+        </div> <br/>
+        <hr >
+        <?php echo $this->layout()->content; ?>
+    </body>
+</html>
